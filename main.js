@@ -8,7 +8,6 @@ function toggleNavbar(){
     // alert("plz here");
     nav_header.classList.add("active");
     console.log(24);
-    
 }
 
 function toggleNavbar2(){
