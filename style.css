@@ -29,7 +29,7 @@ h1 {
 }
 
 .child1 {
-    width:100%;
+    width: 100%;
     height: 250px;
 
     display: flex;
@@ -51,7 +51,7 @@ h1 {
 
 .list {
     height: 40px;
-    width: 590px;
+    width: 530px;
     position: absolute;
     display: inline-block;
     background-color: rgba(0, 0, 255, 0);
@@ -98,8 +98,8 @@ ul {
     display: inline-block;
     letter-spacing: 1px;
     height: 22px;
-    width: max-content;
-    padding: 10px 20px;
+    width: fit-content;
+    padding: 10px 18px;
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -292,6 +292,7 @@ h1::before {
     position: relative;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .heading {
@@ -346,7 +347,10 @@ h1::before {
 .head2 {
     background-color: #161623;
 }
+.head5 {
+    background-color: #2e2e34;
 
+}
 .head3 {
     background-color: #666666;
 
@@ -391,7 +395,7 @@ h1::before {
 }
 
 .container .card:hover {
-    height: 420px;
+    height: 320px;
 }
 
 .container .card .imgbx {
@@ -417,7 +421,7 @@ h1::before {
     color: #111;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .container .card:hover .content {
@@ -429,13 +433,13 @@ h1::before {
 
 .xyz {
     width: 70%;
-    padding-left: 40px;
+    padding-left: 37px;
 }
 
 .abc {
     height: 70%;
-    width: 70%;
-    padding-left: 40px;
+    width: 78%;
+    padding-left: 24px;
 }
 
 
@@ -445,12 +449,12 @@ h1::before {
 
 /* CSS for winner section starts */
 
-section {
+.winner {
     position: relative;
     background-color: #161623
 }
 
-section::before {
+.winner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -461,7 +465,7 @@ section::before {
     clip-path: circle(20% at right 80%);
 }
 
-section::after {
+.winner::after {
     content: '';
     position: absolute;
     top: 0;
@@ -482,10 +486,35 @@ section::after {
     padding: 40px 0;
 }
 
+.container3 {
+
+    background-color: #161623 ;position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
 .container2 .card2 {
     position: relative;
     width: 300px;
     height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.container3 .card2 {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    color: white;
     background: rgba(255, 255, 255, 0.05);
     margin: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -548,7 +577,21 @@ section::after {
 
 /* CSS FOR WINNER SECTION ENDS */
 
+/* CSS FOR DETAILS SECTION STARTS */
 
+
+.container3 {
+    background-color: #2e2e34 ;position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+
+/* CSS FOR DETAILS SECTION ENDS */
 
 /* CSS FOR FAQS SECTION STARTS */
 
@@ -743,7 +786,9 @@ footer .contact p:hover {
 
 @media screen and (max-width:1315px) {
     .list {
-        left: 55%
+        left: 55%;
+        width: 520px;
+        
     }
 
     .list1 {
@@ -786,7 +831,8 @@ footer .contact p:hover {
 
 @media screen and (max-width:1145px) {
     .list {
-        left: 50%;
+        left: 48%;
+        width: 500px;
     }
 
     .list-items {
@@ -876,7 +922,7 @@ footer .contact p:hover {
     }
 
     h1 {
-        font-size:4rem ;
+        font-size: 4rem;
         font-weight: 800;
         transform: scale(1.2, 1.4);
     }
@@ -1004,6 +1050,15 @@ footer .contact p:hover {
         font-weight: 800;
         transform: scale(0.65, 0.9);
     }
+    .winner::before { 
+        background: none;
+    }
+    
+    .winner::after {
+        background: none;
+    }
+
+
 }
 
 @media screen and (max-width:545px) {
@@ -1069,7 +1124,10 @@ footer .contact p:hover {
 }
 
 @media screen and (max-width:410px) {
-
+    .list{
+        width: 300px;
+        left: 2.5rem;
+    }
 
     .mobilenav {
         display: inline-block;
@@ -1090,11 +1148,12 @@ footer .contact p:hover {
     .list-items {
         font-size: 0.8rem;
         margin: 0 -0.5rem;
+        padding-left: 15px;
 
     }
 
     h1 {
-        font-weight:1200;
+        font-weight: 1200;
         font-size: 7rem;
         transform: scale(0.3, 0.5);
     }
@@ -1105,6 +1164,11 @@ footer .contact p:hover {
 }
 
 @media screen and (max-width:350px) {
+
+    .list{
+        width: 250px;
+        left: 1.8rem;
+    }
 
 
     .mobilenav {
@@ -1122,6 +1186,7 @@ footer .contact p:hover {
         left: 5%;
         width: 50px;
     }
+
     .list-items {
         font-size: 0.7rem;
         margin: 0 -0.7rem;
@@ -1129,13 +1194,17 @@ footer .contact p:hover {
     }
 
     h1 {
-        font-weight:900;
+        font-weight: 900;
         font-size: 6rem;
         transform: scale(0.3, 0.5);
     }
 }
 
 @media screen and (max-width:295px) {
+    .list{
+        width: 230px;
+        left:1.5rem;
+    }
 
 
     .mobilenav {
@@ -1155,12 +1224,17 @@ footer .contact p:hover {
     }
 
     .list-items {
-        font-size: 14px;
+        font-size: 10px;
 
+    }
+    .card{
+        padding:20px 15px;
+        margin: 30px 50px;
+        max-width: 280px;
     }
 
     h1 {
-        font-weight:900;
+        font-weight: 900;
         font-size: 5rem;
         transform: scale(0.3, 0.5);
     }
