@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .parent1 {
@@ -347,13 +348,19 @@ h1::before {
 .head2 {
     background-color: #161623;
 }
+
+.head3 {
+    background-color: #666666;
+
+}
+
 .head5 {
     background-color: #2e2e34;
 
 }
-.head3 {
-    background-color: #666666;
 
+.head6 {
+    background-color: #1f1f22;
 }
 
 .head3 .heading {
@@ -488,7 +495,8 @@ h1::before {
 
 .container3 {
 
-    background-color: #161623 ;position: relative;
+    background-color: #161623;
+    position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -510,6 +518,7 @@ h1::before {
     align-items: center;
     backdrop-filter: blur(10px);
 }
+
 .container3 .card2 {
     position: relative;
     width: 80%;
@@ -575,13 +584,19 @@ h1::before {
     text-transform: initial;
 }
 
+.winner23 {
+    position: relative;
+    background-color: #1f1f22
+}
+
 /* CSS FOR WINNER SECTION ENDS */
 
 /* CSS FOR DETAILS SECTION STARTS */
 
 
 .container3 {
-    background-color: #2e2e34 ;position: relative;
+    background-color: #2e2e34;
+    position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -590,6 +605,9 @@ h1::before {
     padding: 40px 0;
 }
 
+.details_content {
+    padding: 10px 10px;
+}
 
 /* CSS FOR DETAILS SECTION ENDS */
 
@@ -656,10 +674,10 @@ h1::before {
 }
 
 .accordion h5 {
-    font-size: larger;
+    font-size: inherit;
     margin: 0;
     padding: 3px 0 0 0;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -683,7 +701,8 @@ h1::before {
     max-height: 0;
     transition: all 0.3s ease-in;
     font-size: medium;
-    font-weight: 300;
+    font-weight: 200;
+    width: 95%;
 }
 
 /* CSS FOR FAQS SECTION ENDS */
@@ -781,6 +800,42 @@ footer .contact p:hover {
 
 /* CSS FOR FOOTER ENDS */
 
+/* CSS FOR SCROLL ON TOP BUTTON STARTS */
+
+.scrolltop {
+    height: 40px;
+    width:40px;
+    position: fixed;
+    border-radius: 50%;
+    border-color: #2222de;
+    background-color: #3b3b3b;
+    align-self: flex-end;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.upwardarrowing {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height: 25px;
+    width: auto;
+}
+
+.scrolltop.active{
+    bottom: 10px;
+    right: 10px;
+    pointer-events:auto;  
+    opacity: 1;
+    transition: ease-out;
+}
+
+/* CSS FOR SCROLL ON TOP BUTTON ENDS */
 
 /* responsiveness */
 
@@ -788,7 +843,7 @@ footer .contact p:hover {
     .list {
         left: 55%;
         width: 520px;
-        
+
     }
 
     .list1 {
@@ -994,13 +1049,14 @@ footer .contact p:hover {
         align-items: flex-start;
         width: 100vw;
         position: relative;
-        /* padding-left: 1.3rem; */
+        /* padding: 10px; */
     }
 
     footer .about {
         display: flex;
-        width: 100%;
+        width: 91%;
         align-items: flex-start;
+        padding: 10px;
 
     }
 
@@ -1013,6 +1069,7 @@ footer .contact p:hover {
     footer .contact {
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
 
     footer .contact h2 {
@@ -1050,10 +1107,11 @@ footer .contact p:hover {
         font-weight: 800;
         transform: scale(0.65, 0.9);
     }
-    .winner::before { 
+
+    .winner::before {
         background: none;
     }
-    
+
     .winner::after {
         background: none;
     }
@@ -1124,14 +1182,14 @@ footer .contact p:hover {
 }
 
 @media screen and (max-width:410px) {
-    .list{
+    .list {
         width: 300px;
         left: 2.5rem;
     }
 
     .mobilenav {
         display: inline-block;
-        left: 55%;
+        left: 50%;
     }
 
     .list1 {
@@ -1159,13 +1217,13 @@ footer .contact p:hover {
     }
 
     .containerFluid {
-        width: 90%;
+        width: 85%;
     }
 }
 
 @media screen and (max-width:350px) {
 
-    .list{
+    .list {
         width: 250px;
         left: 1.8rem;
     }
@@ -1201,9 +1259,9 @@ footer .contact p:hover {
 }
 
 @media screen and (max-width:295px) {
-    .list{
+    .list {
         width: 230px;
-        left:1.5rem;
+        left: 1.5rem;
     }
 
 
@@ -1227,8 +1285,9 @@ footer .contact p:hover {
         font-size: 10px;
 
     }
-    .card{
-        padding:20px 15px;
+
+    .card {
+        padding: 20px 15px;
         margin: 30px 50px;
         max-width: 280px;
     }
@@ -1241,4 +1300,3 @@ footer .contact p:hover {
 }
 
 /* _W3B_I5_ */
-

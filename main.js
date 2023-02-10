@@ -1,4 +1,5 @@
 // C0MM1NG_S00N}
+
 const mobile_nav = document.getElementById("mobnavid");
 const nav_header = document.getElementById("smallNav");
 // console.log(mobile_nav);
@@ -34,3 +35,14 @@ for (i = 0; i < len; i++) {
     }
   });
 }
+
+var scrolltop=document.querySelector(".scrolltop");
+window.addEventListener("scroll",()=>{
+  if(window.pageYOffset > 100){
+    scrolltop.classList.add("active");
+    console.log("added")
+  }else{
+    scrolltop.classList.remove("active");
+    console.log("removed")
+  }
+})
