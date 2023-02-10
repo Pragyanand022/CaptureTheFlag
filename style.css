@@ -360,7 +360,7 @@ h1::before {
 }
 
 .head6 {
-    background-color: #1f1f22;
+    background-color: #161623
 }
 
 .head3 .heading {
@@ -461,7 +461,7 @@ h1::before {
     background-color: #161623
 }
 
-.winner::before {
+.winner23::before {
     content: '';
     position: absolute;
     top: 0;
@@ -586,7 +586,7 @@ h1::before {
 
 .winner23 {
     position: relative;
-    background-color: #1f1f22
+    background-color: #161623
 }
 
 /* CSS FOR WINNER SECTION ENDS */
