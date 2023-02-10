@@ -1,5 +1,4 @@
 // C0MM1NG_S00N}
-
 const mobile_nav = document.getElementById("mobnavid");
 const nav_header = document.getElementById("smallNav");
 // console.log(mobile_nav);
