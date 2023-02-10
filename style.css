@@ -1150,6 +1150,9 @@ footer .contact p:hover {
         width: 80%;
     }
 
+    .container3 .card2{
+        height: 245px;
+    }
 }
 
 @media screen and (max-width:475px) {
@@ -1296,6 +1299,9 @@ footer .contact p:hover {
         font-weight: 900;
         font-size: 5rem;
         transform: scale(0.3, 0.5);
+    }
+    .container3 .card2{
+        height: 270px;
     }
 }
 
